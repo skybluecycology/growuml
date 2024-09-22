@@ -1,0 +1,14 @@
+@startuml
+class Task {
+  +name: str
+  +duration: int
+}
+class Orchestrator {
+  +tasks: List<Task>
+  +add_task(task: Task)
+  +execute()
+}
+actor User
+User -> Orchestrator: add_task(Task)
+User -> Orchestrator: execute()
+@enduml
