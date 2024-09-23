@@ -1,0 +1,5 @@
+@startuml
+Alice -> Bob: greet(name="Alice")
+Bob -> Carol: sayHello(message="Hello, Carol!")
+Carol -> Dave: respond(response="Hi, Bob!")
+@enduml
